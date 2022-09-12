@@ -15,7 +15,7 @@ body {
 }
 
 .hero{
-    height: 30%;
+    height: 200px;
     background-image: linear-gradient(
   50deg,
   hsl(0deg 0% 0%) 0%,
@@ -29,6 +29,99 @@ body {
   hsl(291deg 77% 5%) 89%,
   hsl(292deg 79% 6%) 100%
 );
+    position: relative;
+}
+
+.credit-card-back {
+    background-color: rgb(219, 218, 218);
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 32px;
+    right: 16px;
+    border-radius: 10px;
+}
+
+.black-stripe {
+    margin-top: 16px;
+    margin-bottom: 10px;
+    height: 2rem;
+    width: 100%;
+    background-color: black;
+}
+
+.gray-stripe {
+    background-color: rgb(128, 128, 133);
+    color: azure;
+    width: 80%;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+.credit-card-front {
+    padding: 1.3rem;
+    color: white;
+    width: 300px;
+    height: 150px;
+    background-color: red;
+    position: absolute;
+    bottom: -70px;
+    left: 16px;
+    background-image: linear-gradient(
+  125deg,
+  hsl(267deg 93% 47%) 0%,
+  hsl(273deg 89% 42%) 11%,
+  hsl(279deg 85% 36%) 22%,
+  hsl(285deg 81% 30%) 35%,
+  hsl(291deg 76% 25%) 47%,
+  hsl(290deg 83% 25%) 60%,
+  hsl(287deg 88% 25%) 72%,
+  hsl(286deg 94% 25%) 86%,
+  hsl(284deg 100% 26%) 100%
+);
+    border-radius: 10px;
+}
+
+.card-top {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.big-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.small-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.card-number {
+    letter-spacing: .1rem;
+    word-spacing: 1rem;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
 }
 
 .main {
