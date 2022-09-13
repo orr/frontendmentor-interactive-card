@@ -27,7 +27,7 @@ body {
     width: 290px;
     height: 160px;
     position: absolute;
-    top: 32px;
+    bottom: 32px;
     left: 72px;
     border-radius: 10px;
 }
@@ -60,7 +60,7 @@ body {
     height: 160px;
     background-color: red;
     position: absolute;
-    top: 127px;
+    bottom: -50px;
     left: 16px;
     font-size: 16px;
     text-transform: uppercase;
@@ -293,17 +293,4 @@ body {
     }
 }
 
-@media screen and (max-height: 500px)  {
 
-    .credit-card-back {
-        
-        top: 10px;
-        left: 216px;
-    }
-    
-    .credit-card-front {
-        top: 10px;
-        
-    }
-
-}
