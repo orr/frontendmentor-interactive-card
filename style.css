@@ -292,3 +292,18 @@ body {
         gap: 1.5rem;
     }
 }
+
+@media screen and (max-height: 500px)  {
+
+    .credit-card-back {
+        
+        top: 10px;
+        left: 216px;
+    }
+    
+    .credit-card-front {
+        top: 10px;
+        
+    }
+
+}
