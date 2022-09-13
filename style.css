@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
 }
 
 .wrapper {
@@ -15,27 +16,16 @@ body {
 }
 
 .hero{
-    height: 200px;
-    background-image: linear-gradient(
-  50deg,
-  hsl(0deg 0% 0%) 0%,
-  hsl(300deg 100% 1%) 11%,
-  hsl(288deg 71% 1%) 22%,
-  hsl(293deg 80% 2%) 33%,
-  hsl(289deg 85% 3%) 44%,
-  hsl(295deg 75% 3%) 56%,
-  hsl(292deg 79% 4%) 67%,
-  hsl(293deg 82% 4%) 78%,
-  hsl(291deg 77% 5%) 89%,
-  hsl(292deg 79% 6%) 100%
-);
+    height: 240px;
+    background: rgb(34,8,48);
+    background: linear-gradient(77deg, rgba(34,8,48,1) 0%, rgba(76,71,128,1) 100%); 
     position: relative;
 }
 
 .credit-card-back {
     background-color: rgb(219, 218, 218);
-    width: 300px;
-    height: 150px;
+    width: 290px;
+    height: 160px;
     position: absolute;
     top: 32px;
     right: 16px;
@@ -62,14 +52,16 @@ body {
     padding-right: 5px;
 }
 .credit-card-front {
-    padding: 1.3rem;
+    padding: 18px 20px;
     color: white;
-    width: 300px;
-    height: 150px;
+    width: 290px;
+    height: 160px;
     background-color: red;
     position: absolute;
     bottom: -70px;
     left: 16px;
+    font-size: 16px;
+    text-transform: uppercase;
     background-image: linear-gradient(
   125deg,
   hsl(267deg 93% 47%) 0%,
@@ -93,15 +85,15 @@ body {
 }
 
 .big-circle {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     background-color: white;
 }
 
 .small-circle {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     border-radius: 100%;
     background-color: transparent;
     border: 1px solid white;
@@ -111,12 +103,17 @@ body {
 .card-bottom {
     display: flex;
     flex-direction: column;
-    gap: .3rem;
+    gap: 1.25rem;
 }
 
 .card-number {
     letter-spacing: .1rem;
-    word-spacing: 1rem;
+    word-spacing: .3rem;
+}
+
+.card-name {
+    letter-spacing: .1rem;
+    word-spacing: .3rem;
 }
 
 .card-info {
@@ -125,8 +122,7 @@ body {
 }
 
 .main {
-    height: 70%;
-    margin-top: 40px;
+    
     background-color: white;
     padding: 5rem 2rem 5rem 2rem;
 }
@@ -143,7 +139,7 @@ body {
     gap: .4rem;
     color: hsl(278, 68%, 11%);
     font-size: 12px;
-    letter-spacing: .04rem;
+    letter-spacing: .4rem;
     text-transform: uppercase;
 }
 
@@ -215,6 +211,150 @@ body {
     .hero{
         height: 100%;
         width: 30%;
-        
     }
+
+    .credit-card-back {
+        background-color: rgb(219, 218, 218);
+        bottom: 500px;
+        top: auto;
+        right: auto;
+        left: 500px;
+    }
+    
+    
+    .credit-card-front {
+        width: 300px;
+        height: 150px;
+        bottom: auto;
+        top: 100px;
+        left: 400px;
+    }
+    
+    .card-top {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .big-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: white;
+    }
+    
+    .small-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 100%;
+    }
+    
+    .card-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: .3rem;
+    }
+    
+    .card-number {
+        letter-spacing: .1rem;
+        word-spacing: 1rem;
+    }
+    
+    .card-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main {
+        height: 100%;
+        width: 70%;
+        margin-top: 40px;
+        background-color: white;
+        padding: 5rem 2rem 5rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .form-wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .form-input {
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+        color: hsl(278, 68%, 11%);
+        font-size: 12px;
+        letter-spacing: .04rem;
+        text-transform: uppercase;
+    }
+    
+    .normal-input {
+        height: 2.5rem;
+        padding: 5px 10px;
+        border: 1px solid rgb(175, 170, 170);
+        border-radius: 8px;
+        color: hsl(278, 68%, 11%);
+        font-size: 12px;
+    }
+    
+    .normal-input:focus {
+        outline: none;
+        border: 1px solid hsl(278, 68%, 11%);;
+    }
+    
+    .normal-input::placeholder {
+        opacity: .5;
+        color: rgb(138, 126, 126);
+    }
+    
+    .expiration-wrapper {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .expiration-left {
+        flex: 1;
+        min-width: none;
+    }
+    
+    .expiration-left-inputs {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+    
+    .expiration-left-inputs > input {
+        width: 100%;
+        min-width: 30%;
+    }
+    
+    .expiration-right {
+        flex: 1;
+        min-width: none;
+    }
+    
+    .confirm-button {
+        width: 100%;
+        background-color: rgb(25, 1, 36);
+        color: white;
+        font-size: 1rem;
+        padding: 1rem;
+        display: inline-block;
+        letter-spacing: .1rem;
+        font-weight: bold;
+        outline: none;
+        border-radius: 10px;
+        border: none;
+    }
+    
 }
